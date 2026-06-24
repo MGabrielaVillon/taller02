@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ventas de Café (XML → Tabla)</title>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>☕Ventas de café</h1>
+      <div class="sub">Explora los <strong>ingresos venta de café</strong>. </div>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <!-- Columna izquierda: Tabla con datos -->
+    <section class="card">
+      <div class="body">
+        <div style="display:grid; gap:24px">
+          <div>
+            <h2 style="margin:0 0 8px;font-size:1.05rem">Ingresos por venta</h2>
+            <div class="table-wrap" style="overflow:auto; border:1px solid #1f2937; border-radius:12px">
+              <table id="dailyTable">
+                <thead>
+                  <tr>
+                    <th>Día</th>
+                    <th>Tipo de café</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody id="transacciones"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
